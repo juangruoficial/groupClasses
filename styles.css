@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: hsl(233, 100%, 4%);
+  color: #fff;
+}
+
+:root {
+  --darkBlue: hsl(234, 28%, 45%);
+  --lines: #7895cb;
+}
+/*ok*/
+.groups {
+  max-width: 1024px;
+  padding: 1rem;
+  margin: 0 auto;
+  display: grid;
+  gap: 5rem;
+}
+
+.group {
+  user-select: none;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.group:nth-child(1) {
+  border: 0.5rem solid #7895cb;
+}
+
+.group:nth-child(2) {
+  border: 0.5rem solid #ff9b9b;
+}
+
+.group:nth-child(3) {
+  border: 0.5rem solid #c3edc0;
+}
+
+.group:nth-child(4) {
+  border: 0.5rem solid #ffa500;
+}
+
+.group h2 {
+  color: var(--lines);
+}
+
+.subGroups {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 1rem;
+  gap: 1rem;
+  border-radius: 1rem;
+}
+
+.subGroup {
+  padding: 1rem;
+  border: 0.5rem solid #7895cb;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.participants {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  flex-grow: 1;
+  flex-basis: 30%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
+  border: 0.2rem solid var(--lines);
+}
+
+.participants:hover {
+  background-color: var(--lines);
+  color: #000;
+}
+
+.participants p:nth-child(1) {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.participants:active {
+  background-color: var(--lines);
+  transform: scale(0.95);
+  color: #000;
+}
