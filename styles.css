@@ -12,7 +12,10 @@ body {
 
 :root {
   --darkBlue: hsl(234, 28%, 45%);
-  --lines: #7895cb;
+  --lightViolet: #7895cb;
+  --orange: #ffa500;
+  --lightGreen: #c3edc0;
+  --pink: #ff9b9b;
 }
 /*ok*/
 .groups {
@@ -32,23 +35,23 @@ body {
 }
 
 .group:nth-child(1) {
-  border: 0.5rem solid #7895cb;
+  border: 0.5rem solid var(--lightViolet);
 }
 
 .group:nth-child(2) {
-  border: 0.5rem solid #ff9b9b;
+  border: 0.5rem solid var(--pink);
 }
 
 .group:nth-child(3) {
-  border: 0.5rem solid #c3edc0;
+  border: 0.5rem solid var(--lightGreen);
 }
 
 .group:nth-child(4) {
-  border: 0.5rem solid #ffa500;
+  border: 0.5rem solid var(--orange);
 }
 
 .group h2 {
-  color: var(--lines);
+  color: var(--lightViolet);
 }
 
 .subGroups {
@@ -62,11 +65,35 @@ body {
 
 .subGroup {
   padding: 1rem;
-  border: 0.5rem solid #7895cb;
+  border: 0.5rem solid var(--lightViolet);
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+.Grupo2 {
+  border: 0.5rem solid var(--pink);
+}
+
+.Grupo3 {
+  border: 0.5rem solid var(--lightGreen);
+}
+
+.Grupoaldeadelahoja {
+  border: 0.5rem solid var(--orange);
+}
+
+.subGroup .Grupo2 {
+  border: 0.5rem solid var(--pink);
+}
+
+.subGroup .Grupo3 {
+  border: 0.5rem solid var(--lightGreen);
+}
+
+.subGroup .Grupoaldeadelahoja {
+  border: 0.5rem solid var(--orange);
 }
 
 .participants {
@@ -80,11 +107,11 @@ body {
   border-radius: 0.5rem;
   cursor: pointer;
   transition: background-color 0.5s, color 0.5s;
-  border: 0.2rem solid var(--lines);
+  border: 0.2rem solid var(--lightViolet);
 }
 
 .participants:hover {
-  background-color: var(--lines);
+  background-color: var(--lightViolet);
   color: #000;
 }
 
@@ -94,7 +121,7 @@ body {
 }
 
 .participants:active {
-  background-color: var(--lines);
+  background-color: var(--lightViolet);
   transform: scale(0.95);
   color: #000;
 }

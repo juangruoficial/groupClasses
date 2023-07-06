@@ -21,7 +21,8 @@ function printGroup(data) {
   let html = "";
   for (const { title, subGroups } of data) {
     html += `<div class="group"><h2>${title}</h2><div class="subGroups">${printSubGroups(
-      subGroups
+      subGroups,
+      title
     )}</div>
               
               
@@ -30,23 +31,27 @@ function printGroup(data) {
   dataHTML.innerHTML = html;
 }
 
-function printSubGroups(array) {
+function printSubGroups(array, nameGroup) {
   let html = "";
 
   for (const { title, participants } of array) {
-    html += `<div class="subGroup"><h3>${title}</h3>${printemails(
-      participants
-    )}</div>
+    html += `<div class="subGroup ${nameGroup.replaceAll(
+      " ",
+      ""
+    )}"><h3>${title}</h3>${printemails(participants, nameGroup)}</div>
            `;
   }
   return html;
 }
 
-function printemails(array) {
+function printemails(array, nameGroup) {
   let html = "";
 
   for (const { name, email } of array) {
-    html += `<div class="participants"><p>${name}</p><p>${email}</p>
+    html += `<div class="participants ${nameGroup.replaceAll(
+      " ",
+      ""
+    )}"><p>${name}</p><p>${email}</p>
      
                </div>`;
   }
