@@ -85,15 +85,15 @@ body {
 }
 
 .subGroup .Grupo2 {
-  border: 0.5rem solid var(--pink);
+  border: 0.3rem solid var(--pink);
 }
 
 .subGroup .Grupo3 {
-  border: 0.5rem solid var(--lightGreen);
+  border: 0.3rem solid var(--lightGreen);
 }
 
 .subGroup .Grupoaldeadelahoja {
-  border: 0.5rem solid var(--orange);
+  border: 0.3rem solid var(--orange);
 }
 
 .participants {
