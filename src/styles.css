@@ -125,3 +125,14 @@ body {
   transform: scale(0.95);
   color: #000;
 }
+
+.subGroup .Grupo2:hover {
+  background-color: var(--pink);
+}
+
+.subGroup .Grupo3:hover {
+  background-color: var(--lightGreen);
+}
+.subGroup .Grupoaldeadelahoja:hover {
+  background-color: var(--orange);
+}
